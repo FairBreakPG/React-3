@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import '../formulario/Formulario.css';
 import Button from 'react-bootstrap/Button';
-import Alert from '../alert/Alert'; // Importa el componente Alert
+import Alert from '../alert/Alert'; 
 
-export default function Formulario({ agregarColaborador }) {
+export default function Formulario({ agregarColaborador,  }) {
     const [alerta, setAlerta] = useState({ mensaje: '', tipo: '' });
 
     // UseState Estados
@@ -69,7 +69,7 @@ export default function Formulario({ agregarColaborador }) {
                 <Button variant="primary" type='submit'>Agregar Colaborador</Button>{' '}
             </Form.Group>
 
-            {/* Alerta debajo del botón */}
+          
             {alerta.mensaje && (
                 <Alert mensaje={alerta.mensaje} tipo={alerta.tipo} />
             )}

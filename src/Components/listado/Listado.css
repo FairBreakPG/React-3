@@ -18,3 +18,25 @@ height: 200px;
   .tabla-listado-colaboradores td {
     border: 1px solid gray; 
   }
+
+  @media only screen and (max-width: 768px) {
+    .caja {
+        padding: 20px;
+    }
+
+    .tabla-listado-colaboradores {
+        overflow-x: auto;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-container,
+    .form-container {
+        width: 100%;
+        margin: 0;
+    }
+
+  }    
