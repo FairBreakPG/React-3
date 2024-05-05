@@ -1,6 +1,7 @@
 .tabla-listado-colaboradores{
 
 width: 800px;
+height: 200px;
 
 }
 
@@ -9,3 +10,11 @@ width: 800px;
     text-align: center;
 }
     
+.tabla-listado-colaboradores {
+    border: 1px solid gray; 
+  }
+  
+  .tabla-listado-colaboradores th,
+  .tabla-listado-colaboradores td {
+    border: 1px solid gray; 
+  }
