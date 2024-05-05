@@ -7,13 +7,10 @@ import { BaseColaboradores } from './Components/datos/BaseColaboradores';
 import '../src/App.css';
 
 export default function App() {
-  // Estado para los nuevos colaboradores 
   const [colaboradores, setColaboradores] = useState(BaseColaboradores);
 
-  // Estado para los colaboradores filtrados
   const [filteredColaboradores, setFilteredColaboradores] = useState([]);
 
-  // Logica para agregar un colaborador
   const agregarColaborador = (nuevoColaborador) => {
     setColaboradores([...colaboradores, nuevoColaborador]);
 
